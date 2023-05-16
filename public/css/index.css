@@ -1,7 +1,129 @@
+/* :root {
+  background: purple;
+}
+
+
 html {
   max-width: 720px;
+  background: blue;
 }
 
 body {
   background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+.box {
+  background: gray;
+}
+
+#user {
+  color: brown;
+}
+
+h2, h3, button {
+  color: chartreuse;
+}
+.button {
+
+  background: red;
+  color: burlywood;
+}
+div > p {
+  color: cyan;
+} */
+
+/* 
+.card-dark {
+ background: gray; 
+}
+
+.item {
+  color: greenyellow;
+}
+
+.item:first-child {
+  color: red;
+}
+
+.item:last-child {
+  color: chocolate;
+}
+
+.item:first-of-type {
+  color: rgb(228, 14, 199);
+}
+
+.item:last-of-type {
+  color: aqua;
+}
+
+.item:only-of-type {
+  color: red;
+}
+
+.item:nth-child(1) {
+  color: deeppink;
+}
+
+.item:nth-child(5) {
+  color: crimson;
+} */
+
+.card-dark {
+  background: gray;
+}
+.input-dark {
+  background: red;
+}
+.input-dark[required] {
+background: yellowgreen;
+}
+.input-dark[type='number'] {
+  background: crimson;
+}
+.small-img[alt~="small"] {
+  height: 500px;
+}
+.card[class~='img'] {
+  height: 700px;
+}
+
+a[rel~='external'] {
+  color: aqua;
+}
+button[class|='btn'] {
+  background: aqua;
+}
+a[class^='btn'] {
+  background: red;
+}
+a[class*='btn'] {
+  background: green;
+}
+a[class$='big'] {
+  background: blueviolet;
+}
+.btn::first-letter {
+  color: red;
+}
+.big-text::first-line {
+  color: red;
+}
+
+.input-dark::placeholder {
+  color: aqua;
+  background: blue;
+}
+.big-text::before,
+.big-text::after {
+  content: '$$$';
+  color: aqua;
+  background: cadetblue;
 }
