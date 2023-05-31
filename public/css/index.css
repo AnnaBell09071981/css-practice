@@ -1,129 +1,68 @@
-/* :root {
-  background: purple;
+.card {
+  color: red;
 }
-
-
-html {
-  max-width: 720px;
-  background: blue;
+.card > p {
+  color: aqua;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue ;
 }
+p:focus, 
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(188, 228, 10);
+  -webkit-text-stroke: 1px rgb(231, 22, 214);
 
-body {
-  background: #fff;
+  direction: rtl;
 }
+#test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
 
+  /* writing-mode: vertical-rl; */
+
+  text-align: justify;
+
+  letter-spacing: 1em;
+}
+span {
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline solid red;
+  /* text-decoration: overline dotted blue;
+  text-decoration: line-through dotted green; */
+}
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+pre {
+  tab-size: 3;
+  
+}
 * {
-  color: red;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+span {
+  font-size: larger;
+  font-weight: lighter;
+  font-style: italic;
+}
+.test {
+  font-weight: lighter;
+  display: none;
+}
+.block {
+  display: block;
+  background: darkblue;
+  margin: auto;
+  /* width: 100px;
+  height: auto; */
+  min-height: 100px;
+  max-width: min-content;
 }
 
-h1 {
-  color: green;
-}
-.box {
-  background: gray;
-}
-
-#user {
-  color: brown;
-}
-
-h2, h3, button {
-  color: chartreuse;
-}
-.button {
-
-  background: red;
-  color: burlywood;
-}
-div > p {
-  color: cyan;
-} */
-
-/* 
-.card-dark {
- background: gray; 
-}
-
-.item {
-  color: greenyellow;
-}
-
-.item:first-child {
-  color: red;
-}
-
-.item:last-child {
-  color: chocolate;
-}
-
-.item:first-of-type {
-  color: rgb(228, 14, 199);
-}
-
-.item:last-of-type {
-  color: aqua;
-}
-
-.item:only-of-type {
-  color: red;
-}
-
-.item:nth-child(1) {
-  color: deeppink;
-}
-
-.item:nth-child(5) {
-  color: crimson;
-} */
-
-.card-dark {
-  background: gray;
-}
-.input-dark {
-  background: red;
-}
-.input-dark[required] {
-background: yellowgreen;
-}
-.input-dark[type='number'] {
-  background: crimson;
-}
-.small-img[alt~="small"] {
-  height: 500px;
-}
-.card[class~='img'] {
-  height: 700px;
-}
-
-a[rel~='external'] {
-  color: aqua;
-}
-button[class|='btn'] {
-  background: aqua;
-}
-a[class^='btn'] {
-  background: red;
-}
-a[class*='btn'] {
-  background: green;
-}
-a[class$='big'] {
-  background: blueviolet;
-}
-.btn::first-letter {
-  color: red;
-}
-.big-text::first-line {
-  color: red;
-}
-
-.input-dark::placeholder {
-  color: aqua;
-  background: blue;
-}
-.big-text::before,
-.big-text::after {
-  content: '$$$';
-  color: aqua;
-  background: cadetblue;
-}
