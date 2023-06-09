@@ -3,9 +3,9 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 --}}
 <header class="header">
-    <a href="#test">
+    <div>
         {{> logo }}
-    </a>
+    </div>
 
     <nav class="header_nav">
         <div class="header_nav_right">
@@ -13,26 +13,13 @@
         </div>
     </nav>
 </header>
-
-<div class="modal">
-    {{hero.text}} {{hero.text}}
-    <img src="{{hero.photo}}" alt="Hero image" class="modal_image">
-    <div class="modal_text">{{hero.text}} {{hero.text}}</div>
-</div>
-
-<input type="text" class="input">
-
 {{#with hero}}
 <div class="hero">
     <div class="hero_content">
         <h1 class="hero_title">{{title}}</h1>
         <p class="hero_text">{{text}}</p>
     </div>
-    <div class="hero_slider">
-        <div class="hero_slider_icon hero_slider_left">{{left}}</div>
-        <img src="{{photo}}" alt="Hero image" class="hero_image">
-        <div class="hero_slider_icon hero_slider_right">{{right}}</div>
-    </div>
+    <img src="{{photo}}" alt="Hero image" class="hero_image">
 </div>
 {{/with}}
 
@@ -56,7 +43,7 @@
 
 
 
-<footer class="footer page_block" id="test">
+<footer class="page_block">
 
     <div class="row footer">
         <div class="col-3">
