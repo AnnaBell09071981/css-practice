@@ -16,7 +16,7 @@
 
 <div class="modal">
     {{hero.text}} {{hero.text}}
-    <img src="{{hero.photo}}" alt="Hero image" class="modal_image">
+    {{!-- <img src="{{hero.photo}}" alt="Hero image" class="modal_image"> --}}
     <div class="modal_text">{{hero.text}} {{hero.text}}</div>
 </div>
 
@@ -56,16 +56,16 @@
 
 
 
-<footer class="footer page_block" id="test">
+<footer class="footer" id="test">
 
-    <div class="row footer">
-        <div class="col-3">
+    <div>
+        <div>
             {{> logo }}
             <span class="footer_copyright">Copyright 2023-2024</span>
         </div>
 
         {{#each footer}}
-        <div class="col-3">
+        <div>
             <span class="footer_title">{{title}}</span>
             {{> nav list=links isVertical=true}}
         </div>
