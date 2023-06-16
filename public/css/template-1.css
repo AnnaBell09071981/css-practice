@@ -30,6 +30,7 @@ text-decoration: none;
 .nav_link:hover {
   text-decoration: underline;
   color: blue;
+  opacity: 50%;
 }
 .nav_vertical > .nav_link {
   display: block;
@@ -138,6 +139,7 @@ vertical-align: 15px;
   outline-offset: 5px;
   box-shadow: 5px 5px 10px 1px purple;
   cursor: pointer;
+  opacity: 50%;
 }
 .btn {
   border-radius: 15px;
@@ -152,7 +154,7 @@ h1 {
 .plans_card:nth-child(2) > .card {
   background: red;
 }
-.hero_text {
+/* .hero_text {
   background: #6C757D;
 
   max-width: 250px;
@@ -161,7 +163,7 @@ h1 {
   overflow: auto;
   resize: both;
 
-  word-spacing: 4px;
+  word-spacing: 4px; */
   /* text-align: left;
   white-space: pre-wrap; */
   /* width: 200px;
@@ -169,6 +171,69 @@ h1 {
   overflow: overlay;
 
   text-overflow: ellipsis; */
+/* } */
+body { 
+  background-image: radial-gradient(50% 50% at 50% 50%,
+  rgb(255, 54, 4) 0%,
+  rgb(13, 64, 231) 100%);
 }
+.page {
+  background-color: transparent;
+}
+.hero_text {
+  /* background-image: url('/img/test2.png'); */
+  /* background-attachment: fixed; */
+  border-image-source: url('/img/test2.png');
+  border-image-width: 10%;
+  border-image-slice: 10%;
+  box-shadow: 2px 2px 20px red;
+  padding: 40px;
+  border-radius: 15px;
+  /* background-clip: padding-box; */
+}
+.card_block {
+  /* list-style-type: square; */
+  list-style-position: inside;
+  list-style-image: linear-gradient(
+    to bottom right,
+    blue,
+    red
+  );
+  padding: 0;
+}
+.card_description_item {
+  display: list-item;
+}
+/* .table tr {
+  border: 1px solid #343A40;
+} */
+.table tr td {
+  border: 1px solid #1a1a1b;
+  border-bottom-color: red;
+  border-bottom-color: blue;
+}
+.table {
+  table-layout: auto;
+  width: 400px;
 
+  border-collapse: unset;
 
+  border-spacing: 10px;
+  caption-side: top;
+  empty-cells: hide;
+}
+.nav_link::before,
+.nav_link::after{
+  /* content: open-quote; */
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+.nav_link::before {
+  margin-right: 15px;
+}
+.nav_link::after {
+  margin-left: 15px;
+}
