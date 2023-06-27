@@ -150,9 +150,27 @@ margin-top: var(--space-l);
 }
 .hero {
   display: flex;
+  align-items: center;
   gap: 36px;
 }
 .hero_image {
   width: 500px;
   height: 500px;
+}
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-l);
+}
+.hero_title {
+  font-size: 50px;
+  color: #5a5a5a;
+  font-weight: 500;
+  line-height: 120%;
+}
+.hero_text {
+  color: #5a5a5a;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 170%;
 }
