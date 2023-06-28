@@ -107,12 +107,12 @@ margin-top: var(--space-l);
 .main {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: var(--space-b);
 }
 .main_image {
   width: 500px;
   height: 500px;
-  border-radius: 12px;
+  border-radius: var(--space-m);
 }
 .main_content {
   display: flex;
@@ -121,12 +121,12 @@ margin-top: var(--space-l);
 }
 .button {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
   max-width: 120px;
   width: 100%;
   display: inline-block;
 
-  font-size: 16px;
+  font-size: var(--size-d);
 
   padding: 10px 20px;
   background: #3b3c3d;
@@ -137,15 +137,15 @@ margin-top: var(--space-l);
 background: #646668;
 }
 .main_title {
-  font-size: 36px;
+  font-size: var(--space-b);
   color: #5A5A5A;
-  font-weight: 500;
+  font-weight: var(--weight-title);
   line-height: 44px;
 }
 .description_text {
-  font-size: 16px;
+  font-size: var(--size-d);
   color: #5A5A5A;
-  font-weight: 400;
+  font-weight: var(--weight-text);
   line-height: 28px;
 }
 .featured {
@@ -162,25 +162,25 @@ background: #646668;
 .card_photo {
   height: 64px;
   width: 64px;
-  border-radius: 12px;
+  border-radius: var(--space-m);
 }
 .card_title {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: var(--weight-title);
   color: #212529;
   line-height: 32px;
 }
 .card_info {
-  font-size: 16px;
-  font-weight: 400;
-  color: #212529;
+  font-size: var(--size-d);
+  font-weight: var(--weight-text);
+  color: var(--color-title);
   line-height: 28px;
 }
 .card_link {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  color: #0D6EFD;
+  font-size: var(--size-d);
+  font-weight: var(--weight-text);
+  line-height: var(--size-d);
+  color: var(--color-primary);
 }
 .card_link:hover {
   opacity: 0.7;
@@ -192,24 +192,24 @@ background: #646668;
   background: #563D7C;
   padding: var(--space-l);
   border-radius: var(--border-radius);
-  gap: 12px;
+  gap: var(--space-m);
 }
 
 .actions_heading {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 16px;
+  font-size: var(--space-l);
+  font-weight: var(--weight-text);
+  line-height: var(--size-d);
   color: #FFFFFF;
-  margin: 12px;
+  margin: var(--space-m);
 }
 .button_actions {
   text-decoration: none;
-  color: #212529;
+  color: var(--color-title);
   max-width: 240px;
   width: 100%;
   display: inline-block;
 
-  font-size: 16px;
+  font-size: var(--size-d);
 
   padding: 10px 20px;
   background: #FFFFFF;
