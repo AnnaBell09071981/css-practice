@@ -117,8 +117,8 @@ margin-top: var(--space-l);
   gap: 40px;
 }
 .messages {
-  /* max-width: 620px;
-  width: 100%; */
+  max-width: 620px;
+  width: 100%;
   background-color: var(--color-white);
   border-radius: var(--border-radius);
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
@@ -183,8 +183,7 @@ margin-top: var(--space-l);
   display: flex;
   gap: var(--space-l);
 }
-.advantages > div,
-.advantage {
+.advantages > div {
   display: flex;
   flex-direction: column;
   border: 1px solid #e4eaf2;
@@ -195,13 +194,12 @@ margin-top: var(--space-l);
 
   /* width: 100%; */
 }
-.advantages > div > strong,
-.advantage > strong {
+.advantages > div > strong {
   color: var(--color-title);
   font-weight: var(--weight-title);
   font-size: 18px;
 }
-.advantages > div > p, .advantage > p {
+.advantages > div > p {
   color: #767676;
   font-size: var(--size-d);
   line-height: 150%;
@@ -211,8 +209,8 @@ margin-top: var(--space-l);
   width: 100%;
 }
 .form {
-  /* max-width: 340px;
-  width: 100%; */
+  max-width: 340px;
+  width: 100%;
   background-color: var(--color-white);
   border-radius: var(--border-radius);
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
@@ -287,45 +285,4 @@ margin-top: var(--space-l);
   color: var(--color-title);
   font-size: var(--size-d);
   cursor: pointer;
-}
-.advantages {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-rows: 1fr 2fr;
-}
-.main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  /* grid-template-areas: 'messages messages form'  'advantages advantages advantages'; */
-
-  grid-auto-columns: 2fr;
-}
-.messages {
-  /* grid-area: messages; */
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-}
-.form {
-  /* grid-area: form; */
-  grid-column: 3 / 4;
-  grid-row: 1 / 3;
-}
-.advantages {
-  /* grid-area: advantages; */
-  /* grid-column: 1 / 3; */
-  grid-row: 3 / 4;
-}
-.advantage {
-  height: 100%;
-}
-.footer {
-  display: grid;
-
-  grid-template-columns: repeat(5, 1fr);
-
-  /* grid-auto-columns: 3fr; */
-}
-.footer > div:first-of-type {
-  grid-column: 1 / 3;
 }
