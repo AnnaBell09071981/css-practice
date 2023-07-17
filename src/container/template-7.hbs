@@ -2,56 +2,85 @@
 Це код container файлу для index сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 --}}
-<header class="header">
-    {{!-- <a href="#test">
-        {{> logo }}
-    </a>
+<div class="page page_content">
+    <header class="header">
+        <div class="header_content">
+            {{#with header}}
+            <div class="header_block_logo">
+                <div class="header_logo">
+                    <span class="logo">{{brandName}}</span>
+                </div>
+                <div class="header_userOnline">
+                    <p class="userOnline_text">Users online: </p>
+                    <span class="header_userOnline">{{userOnline}}</span>
+                </div>
+            </div>
 
-    <nav class="header_nav">
-        <div class="header_nav_right">
-            {{> nav list=header}}
+            {{#with ad}}
+            <div class="ad_text_url">
+                <p class="ad_text">{{text}}</p>
+                <a href="{{url}}" class="ad_url">{{url}}</a>
+            </div>
+            {{/with}}
+            <div class="links_card">
+                {{#each links}}
+                <a href="{{url}}" class="header_links">{{text}}</a>
+                {{/each}}
+            </div>
         </div>
-    </nav> --}}
-</header>
-<div>test</div>
-{{!-- <main class="main">
-    {{#with hero}}
-    <div class="info">
-        <h1 class="info_title">{{title}}</h1>
-        <p class="info_description">{{description}}</p>
-        <a href="{{url}}" class="hero_button">{{text}}</a>
-    </div>
-    {{/with}}
+        {{/with}}
 
-    {{#with about}}
+    </header>
 
-    <h1 class="heading_about">{{heading}}</h1>
-    <p class="about_info">{{info}}</p>
+    <main class="main">
+        <div class="main_hero">
+            {{#with hero}}
+            <div class="info">
+                <h1 class="info_title">{{title}}</h1>
+                <p class="info_description">{{description}}</p>
+                {{#with button}}
+                <div class="hero_button">
+                    <a href="{{url}}" class="button">{{text}}</a>
+                </div>
+                {{/with}}
+            </div>
+            {{/with}}
+        </div>
 
-    {{/with}}
+        {{#with about}}
+        <div class="about">
+            <h1 class="heading_about">{{heading}}</h1>
+            <p class="about_info">{{info}}</p>
+        </div>
+        {{/with}}
+        <h2 class="about_title">Our Articles</h2>
+        <div class="articles">
+            {{#each articles}}
+            <div class="articles_card">
 
-    {{#each articles}}
-    <img src="{{photo}}" alt="Photo" class="articles_photo">
-    <h3 class="article_name">{{name}}</h3>
-    <p class="article_description">{{description}}</p>
-    {{/each}}
+                <img src="{{photo}}" alt="Photo" class="articles_photo" id="{{id}}">
+                <h3 class="article_name">{{name}}</h3>
+                <p class="article_description">{{description}}</p>
+                <div class="articles_card_button">
+                    <a href="#" class="article_button">Read All</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
 
-</main> --}}
+    </main>
 
 
-{{!-- <footer class="footer ">
-    <div>
-        {{> logo }}
-        <span class="footer_copyright">Copyright 2023-2024</span>
-    </div>
+    <footer class="footer ">
+        {{#with footer}}
+        <p class="footer_copyright">{{copyright}}</p>
+        {{#each pages}}
+        <a href="{{path}}" class="footer_pages">{{name}}</a>
+        {{/each}}
+        {{/with}}
+    </footer>
+</div>
 
-    {{#each footer}}
-    <div class="col-3">
-        <span class="footer_title">{{title}}</span>
-        {{> nav list=links isVertical=true}}
-    </div>
-    {{/each}}
-</footer> --}}
 
 
 {{!-- Цей код містить лише те, що буде виводитись в
