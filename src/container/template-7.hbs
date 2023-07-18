@@ -10,12 +10,19 @@
                 <div class="header_logo">
                     <span class="logo">{{brandName}}</span>
                 </div>
+                {{!-- <div class="links_card">
+                    {{#each links}}
+                    <a href="{{url}}" class="header_links">{{text}}</a>
+                    {{/each}}
+                </div> --}}
                 <div class="header_userOnline">
-                    <p class="userOnline_text">Users online: </p>
-                    <span class="header_userOnline">{{userOnline}}</span>
+                    <p class="userOnline_text">Users online: {{userOnline}}</p>
+                    {{!-- <span class="header_userOnline">{{userOnline}}</span> --}}
                 </div>
             </div>
-
+            <div class="ad_badge_card">
+                <img src="/img/ad.svg" alt="Ad" class="ad_badge">
+            </div>
             {{#with ad}}
             <div class="ad_text_url">
                 <p class="ad_text">{{text}}</p>
@@ -35,14 +42,16 @@
     <main class="main">
         <div class="main_hero">
             {{#with hero}}
-            <div class="info">
-                <h1 class="info_title">{{title}}</h1>
-                <p class="info_description">{{description}}</p>
-                {{#with button}}
-                <div class="hero_button">
-                    <a href="{{url}}" class="button">{{text}}</a>
+            <div class="hero">
+                <h1 class="hero_title">{{title}}</h1>
+                <p class="hero_description">{{description}}</p>
+                <div class="hero_button_card">
+                    {{#with button}}
+                    <div class="hero_button">
+                        <a href="{{url}}" class="button">{{text}}</a>
+                    </div>
+                    {{/with}}
                 </div>
-                {{/with}}
             </div>
             {{/with}}
         </div>
