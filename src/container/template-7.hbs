@@ -8,27 +8,24 @@
             {{#with header}}
             <div class="header_block_logo">
                 <div class="header_logo">
-                    <span class="logo">{{brandName}}</span>
+                    <div class="logo">{{brandName}}</div>
                 </div>
-                {{!-- <div class="links_card">
-                    {{#each links}}
-                    <a href="{{url}}" class="header_links">{{text}}</a>
-                    {{/each}}
-                </div> --}}
+
                 <div class="header_userOnline">
                     <p class="userOnline_text">Users online: {{userOnline}}</p>
-                    {{!-- <span class="header_userOnline">{{userOnline}}</span> --}}
                 </div>
             </div>
-            <div class="ad_badge_card">
-                <img src="/img/ad.svg" alt="Ad" class="ad_badge">
+            <div class="ad_badge_text_url">
+                <div class="ad_badge_card">
+                    <img src="/img/ad.svg" alt="Ad" class="ad_badge">
+                </div>
+                {{#with ad}}
+                <div class="ad_text_url">
+                    <p class="ad_text">{{text}}</p>
+                    <a href="{{url}}" class="ad_url">{{url}}</a>
+                </div>
+                {{/with}}
             </div>
-            {{#with ad}}
-            <div class="ad_text_url">
-                <p class="ad_text">{{text}}</p>
-                <a href="{{url}}" class="ad_url">{{url}}</a>
-            </div>
-            {{/with}}
             <div class="links_card">
                 {{#each links}}
                 <a href="{{url}}" class="header_links">{{text}}</a>
@@ -36,11 +33,14 @@
             </div>
         </div>
         {{/with}}
-
+        <div class="header_divider"></div>
     </header>
 
     <main class="main">
         <div class="main_hero">
+            <div class="view_all">
+                <div class="view_all_text">View All</div>
+            </div>
             {{#with hero}}
             <div class="hero">
                 <h1 class="hero_title">{{title}}</h1>
@@ -82,10 +82,14 @@
 
     <footer class="footer ">
         {{#with footer}}
-        <p class="footer_copyright">{{copyright}}</p>
-        {{#each pages}}
-        <a href="{{path}}" class="footer_pages">{{name}}</a>
-        {{/each}}
+        <div class="footer_copyright_card">
+            <p class="footer_copyright">{{copyright}}</p>
+        </div>
+        <div class="footer_pages_card">
+            {{#each pages}}
+            <a href="{{path}}" class="footer_pages">{{name}}</a>
+            {{/each}}
+        </div>
         {{/with}}
     </footer>
 </div>
