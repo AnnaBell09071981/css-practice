@@ -1,0 +1,30 @@
+<div class="header_content">
+    {{#with header}}
+    <div class="header_block_logo">
+        <div class="header_logo">
+            <div class="logo">{{brandName}}</div>
+        </div>
+
+        <div class="header_userOnline">
+            <p class="userOnline_text">Users online: {{userOnline}}</p>
+        </div>
+    </div>
+    <div class="ad_badge_text_url">
+        <div class="ad_badge_card">
+            <img src="/img/ad.svg" alt="Ad" class="ad_badge">
+        </div>
+        {{#with ad}}
+        <div class="ad_text_url">
+            <p class="ad_text">{{text}}</p>
+            <a href="{{url}}" class="ad_url">{{url}}</a>
+        </div>
+        {{/with}}
+    </div>
+    <div class="links_card">
+        {{#each links}}
+        <a href="{{url}}" class="header_links">{{text}}</a>
+        {{/each}}
+    </div>
+</div>
+{{/with}}
+<div class="header_divider"></div>

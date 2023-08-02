@@ -4,36 +4,9 @@
 --}}
 <div class="page page_content">
     <header class="header">
-        <div class="header_content">
-            {{#with header}}
-            <div class="header_block_logo">
-                <div class="header_logo">
-                    <div class="logo">{{brandName}}</div>
-                </div>
 
-                <div class="header_userOnline">
-                    <p class="userOnline_text">Users online: {{userOnline}}</p>
-                </div>
-            </div>
-            <div class="ad_badge_text_url">
-                <div class="ad_badge_card">
-                    <img src="/img/ad.svg" alt="Ad" class="ad_badge">
-                </div>
-                {{#with ad}}
-                <div class="ad_text_url">
-                    <p class="ad_text">{{text}}</p>
-                    <a href="{{url}}" class="ad_url">{{url}}</a>
-                </div>
-                {{/with}}
-            </div>
-            <div class="links_card">
-                {{#each links}}
-                <a href="{{url}}" class="header_links">{{text}}</a>
-                {{/each}}
-            </div>
-        </div>
-        {{/with}}
-        <div class="header_divider"></div>
+        {{> headerDark}}
+
     </header>
 
     <main class="main">
@@ -41,6 +14,8 @@
             <div class="view_all">
                 <div class="view_all_text">View All</div>
             </div>
+
+
             {{#with hero}}
             <div class="hero">
                 <h1 class="hero_title">{{title}}</h1>
@@ -63,34 +38,16 @@
         </div>
         {{/with}}
         <h2 class="about_title">Our Articles</h2>
-        <div class="articles">
-            {{#each articles}}
-            <div class="articles_card">
 
-                <img src="{{photo}}" alt="Photo" class="articles_photo" id="{{id}}">
-                <h3 class="article_name">{{name}}</h3>
-                <p class="article_description">{{description}}</p>
-                <div class="articles_card_button">
-                    <a href="#" class="article_button">Read All</a>
-                </div>
-            </div>
-            {{/each}}
-        </div>
+        {{> articleCardDark}}
 
     </main>
 
 
     <footer class="footer ">
-        {{#with footer}}
-        <div class="footer_copyright_card">
-            <p class="footer_copyright">{{copyright}}</p>
-        </div>
-        <div class="footer_pages_card">
-            {{#each pages}}
-            <a href="{{path}}" class="footer_pages">{{name}}</a>
-            {{/each}}
-        </div>
-        {{/with}}
+
+        {{> footerDark}}
+
     </footer>
 </div>
 
