@@ -1,0 +1,60 @@
+{{!--
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+--}}
+<div class="page page_content">
+    <header class="header">
+
+        {{> headerDark}}
+
+    </header>
+
+    <main class="main">
+        <div class="main_hero">
+            <div class="view_all">
+                <div class="view_all_text">View All</div>
+            </div>
+
+
+            {{#with hero}}
+            <div class="hero">
+                <h1 class="hero_title">{{title}}</h1>
+                <p class="hero_description">{{description}}</p>
+                <div class="hero_button_card">
+                    {{#with button}}
+                    <div class="hero_button">
+                        <a href="{{url}}" class="button">{{text}}</a>
+                    </div>
+                    {{/with}}
+                </div>
+            </div>
+            {{/with}}
+        </div>
+
+        {{#with about}}
+        <div class="about">
+            <h1 class="heading_about">{{heading}}</h1>
+            <p class="about_info">{{info}}</p>
+        </div>
+        {{/with}}
+        <h2 class="about_title">Our Articles</h2>
+
+        {{> articleCardDark}}
+
+    </main>
+
+
+    <footer class="footer ">
+
+        {{> footerDark}}
+
+    </footer>
+</div>
+
+
+
+{{!-- Цей код містить лише те, що буде виводитись в
+
+<body>
+    Адже наш layout/default.hbs має вже структуру HTML
+    --}}

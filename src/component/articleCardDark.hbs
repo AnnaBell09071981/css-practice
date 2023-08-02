@@ -1,0 +1,13 @@
+<div class="articles">
+    {{#each articles}}
+    <div class="articles_card">
+
+        <img src="{{photo}}" alt="Photo" class="articles_photo" id="{{id}}">
+        <h3 class="article_name">{{name}}</h3>
+        <p class="article_description">{{description}}</p>
+        <div class="articles_card_button">
+            <a href="#" class="article_button">Read All</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
