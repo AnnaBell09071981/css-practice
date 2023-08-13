@@ -290,16 +290,78 @@ body {
         }
     
 /* } */
+.features_section_2 {
+    padding-top: 150px;
+    padding-bottom: 150px;
 
+    display: grid;
+    gap: var(--spacing-5);
+}
 .section_feature {
     display: flex;
     justify-content: center;
     padding: 80px 345px 136px 345px;
     align-items: flex-start;
-    align-self: stretch;
+    /* align-self: stretch; */
     background: #F4EDE4;
 }
-
+.feature_section_block {
+    display: flex;
+/* flex-direction: column; */
+align-items: flex-start;
+/* gap: -160px; */
+}
+.feature_cards_4 {
+    position: relative;
+    top: 240px;
+    right: 900px;
+    display: flex;
+padding-left: 0px;
+align-items: flex-end;
+gap: 16px;
+}
+.feature_cards_small_2 {
+    display: flex;
+height: 250px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+}
+.feature_card_one_small {
+    display: flex;
+    width: 100%;
+height: 116px;
+padding: 16px 234px 19px 16px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+background: #FFF;
+box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+}
+.feature_card_big_one {
+    width: 300px;
+height: 250px;
+background: #FFF;
+box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+}
+.frame_card_big {
+    width: 48px;
+    height: 48px;
+}
+.slack_cards_one_arrow {
+    position: relative;
+    left: 220px;
+    bottom: 20px;
+    width: 25px;
+height: 14px;
+}
+.slack_cards_one_arrow_small {
+    position: relative;
+    left: 260px;
+    bottom: 20px;
+    width: 25px;
+height: 14px;
+}
 .feature_title_text {
     display: flex;
     width: 600px;
@@ -336,4 +398,152 @@ body {
 .what_you_need {
     width: 500px;
     height: 400px;
+}
+.deliveroo_card {
+    position: relative;
+    display: flex;
+    padding: 72px 450px 48px 450px;
+    /* justify-content: center; */
+    align-items: flex-start;
+    /* align-self: stretch; */
+}
+.deliveroo_picture {
+    position: relative;
+    top: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 556px;
+    height: 228px;
+}
+.deliveroo_text_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.deliveroo_text {
+    padding-left: 40px;
+    justify-content: flex-end;
+    width: 382px;
+    height: 258px;
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%; 
+    flex-wrap: wrap;
+}
+.deliveroo_logo_card {
+    width: 148px;
+    height: 40px;
+}
+.deliveroo_logo {
+    padding-left: 40px;
+    padding-top: 24px;
+}
+.deliveroo_text_small_card {
+    width: 100%;
+    height: 20px;
+}
+.deliveroo_text_small {
+    padding-top: 24px;
+    padding-left: 40px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+.slack_card {
+    display: flex;
+    flex-direction: column;
+padding: 106.55px 345px 79.99px 345px;
+justify-content: center;
+align-items: flex-start;
+/* align-self: stretch; */
+}
+.slack_title {
+    display: flex;
+    justify-content: center;
+    padding-left: 240px;
+    color: #000;
+text-align: center;
+font-size: 32px;
+font-weight: 700;
+line-height: 38px;
+padding-bottom: 24px;
+}
+.slack_cards_3 {
+    display: flex;
+    padding: 0px 0.05px 8px 0px;
+    align-items: flex-start;
+    gap: 76px;
+}
+.slack_card_one {
+    width: 285px;
+height: 420px;
+background: #FFF;
+box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+}
+.slack_card_two {
+    width: 285px;
+height: 420px;
+background: #FFF;
+box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+}
+.slack_card_three {
+    width: 285px;
+height: 420px;
+background: #FFF;
+box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+}
+.slack_card_one_text {
+    color: #454245;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.slack_card_one_title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.slack_card_one_footer {
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+    padding-top: 120px;
+}
+.slack_card_one_text_end {
+    color: #1264A3;
+    padding-right: 150px;
+align-items: flex-end;
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+}
+.slack_card_one_arrow {
+    width: 25px;
+height: 14px;
+}
+.slack_card_two_footer {
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+    padding-top: 80px;
+}
+.slack_card_three_footer {
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+    padding-top: 40px;
+}
+.slack_card_one_text {
+    padding-left: 8px;
+}
+.slack_card_one_title {
+    padding-left: 8px;
+}
+.slack_card_one_text_end {
+    padding-left: 8px;
 }
